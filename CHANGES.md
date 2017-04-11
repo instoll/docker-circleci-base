@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.1.1
+
+- Bugfix: NodeJS symlink was conflicting
+
 ## 0.1.0
 
 - Feature: Installed base packages
