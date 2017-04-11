@@ -19,8 +19,6 @@ RUN apt-get update && \
         wget \
         software-properties-common \
         unzip && \
-    echo "Install AWS CLI" && \
-      apt-get install -y awscli && \
     echo "Install Python" && \
       apt-get install -y python-dev python-pip && \
     echo "Install Ruby 2.3 and Gems" && \
@@ -32,6 +30,8 @@ RUN apt-get update && \
     echo "Install NodeJS" && \
       curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash - && \
       apt-get install -y nodejs && \
+    echo "Install AWS CLI" && \
+      pip install awscli==1.11.13 && \
     echo "Install Docker" && \
       wget -qO- https://get.docker.com/ | sh && \
       usermod -aG docker $(whoami) && \
