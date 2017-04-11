@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.1.3
+
+- Minor: Bumped the version to trigger build in Docker Hub
+
 ## 0.1.2
 
 - Bugfix: awscli version was too old when installed via default apt repository
